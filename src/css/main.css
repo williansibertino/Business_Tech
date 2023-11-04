@@ -1,6 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 .color {
     color: #f2f2f2;
     color: #ffffff;
     color: #2C27F5;
     color: #0d0d0d;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+input[type=text]{outline:none}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.headerContainer {
+    background-color: #F2F2F2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='259' height='259' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23B0C6F5' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%232C27F5'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-right: 0.1px solid #100f6127;
+}
+.mainContainer {
+    background-color: #f2f2f2;
+    flex-grow: 1;
+}
+
+/* Estilo do cabecalho do menu */
+.barraMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 60px;
+    border-bottom: 0.1px solid #100f6127;
+}
+.barraMenu > img:first-child {
+    height: 34px;
+    margin-left: 10px;
+}
+.barraMenu > img:nth-child(2) {
+    height: 30px;
+    border: 2px solid #2C27F5;
+    border-radius: 50%;
+    margin-right: -80px;
+}
+.barraMenu > ion-icon {
+    font-size: 34px;
+    color: #0d0d0d;
+    margin-right: 10px;
+} 
+/* Fim do Estilo do cabecalho do menu */
+
+/* Estilo do menu principal */
+.menuPrincipal {
+    margin-top: 50px;
+}
+.linkMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    margin: 10px 15px;
+    border: 1px solid #100f6127;
+    border-radius: 10px;
+
+    color: #0D0D0D;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.linkMenu:hover {
+    border: 2px solid #2C27F5;
+    transition: 1s;
+}
+.iconesMenu {
+    font-size: 24px;
+    color: #4743fa;
+    margin-right: 10px;
+}
+/* Fim do Estilo do menu principal */
+
+/* Estilo da barra de pesquisa do Main */
+.barraMain {
+    display: flex;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 0.1px solid #100f6127;
+    justify-content: center;
+    align-items: center;
+}
+.divBusca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffffff;
+    border: 0.1px solid #2C27F5;
+    border-radius:10px;
+    width:500px;
+}
+.txtBusca{
+    background-color:transparent;
+    padding-left:15px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:40px;
+    width:400px;
+
+    color: #0D0D0D;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.divBusca > ion-icon {
+    padding: 3px 15px;
+    font-size: 30px;
+    color: #F2F2F2;
+    background-color: #4743fa;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+/* Fim do Estilo da barra de pesquisa do Main */
